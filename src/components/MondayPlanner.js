@@ -24,7 +24,7 @@ export function MondayPlanner() {
     // When a post request is sent to the create url, we'll add a new record to the sundaybase.
     const newTask = { ...task };
 
-    await fetch("https://planner-backend-664m.onrender.com/monday/add", {
+    await fetch("http://localhost:5000/monday/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,7 +46,7 @@ export function MondayPlanner() {
   //Get request to get tasks from mongodb
 
   async function getTask() {
-    let { data } = await axios.get("https://planner-backend-664m.onrender.com/monday");
+    let { data } = await axios.get("http://localhost:5000/monday");
 
     console.log(data);
 
@@ -56,7 +56,7 @@ export function MondayPlanner() {
   //onDelete function here with axios.delete
   async function onDelete(_id) {
     try {
-      await axios.delete(`https://planner-backend-664m.onrender.com/monday/${_id}`);
+      await axios.delete(`http://localhost:5000/monday/${_id}`);
     } catch (err) {
       console.error("Error response:");
       console.error(err.response.data); // ***
