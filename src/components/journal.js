@@ -27,7 +27,7 @@ export default function Journal() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newJournal = { ...form };
 
-    await fetch("https://planner-backend-664m.onrender.com/users/add", {
+    await fetch("http://localhost:5000/users/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function Journal() {
   }, [journalEntry]);
 
   async function getJournals() {
-    let { data } = await axios.get("https://planner-backend-664m.onrender.com");
+    let { data } = await axios.get("http://localhost:5000/users");
 
     console.log(data);
 
