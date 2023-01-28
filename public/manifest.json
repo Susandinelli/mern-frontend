@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://planner-frontend-qmo5.onrender.com",
+  "start_url": "http://localhost:3000/planner",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
