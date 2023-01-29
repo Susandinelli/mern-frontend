@@ -199,7 +199,7 @@ export function FridayPlanner() {
           </div>{" "}
         </div>
            </div>
-      <div class="h-1 bg-opacity-20 bg-gradient-to-r from-olive-600 to-cocoa-600 via-navy-600"></div>
+
     </>
   );
 }

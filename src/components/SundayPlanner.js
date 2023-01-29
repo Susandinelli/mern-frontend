@@ -174,7 +174,7 @@ export function SundayPlanner() {
             </form>
           </div>
         </div>
-  
+
         <div>
           <div class=" w-20 text-center  p-1 rounded-full bg-gradient-to-r hover:bg-gradient-to-t from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700 m-6 items-center justify-center align-middle ">
             <h3 class=" flex justify-center bg-white p-1 font-sans text-lg  rounded-full   text-olive-800 dark:bg-black text-right dark:text-olive-400">
@@ -199,8 +199,8 @@ export function SundayPlanner() {
             })}
           </div>{" "}
         </div>
-           </div>
-      <div class="h-1 bg-opacity-20 bg-gradient-to-r from-olive-600 to-cocoa-600 via-navy-600"></div>
+      </div>
+
     </>
   );
 }
