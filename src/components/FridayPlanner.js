@@ -69,19 +69,19 @@ export function FridayPlanner() {
   return (
     <>
       {" "}
-      <div class="flex justify-center align-middle text-olive-700 dark:text-olive-400 dark:bg-black">
-        <div class="flex-col m-4 w-2/3 p-1 rounded-full bg-gradient-to-r hover:bg-gradient-to-t  from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700">
-          <h1 class="dark:bg-black font-sans text-center text-xl bg-white rounded-full p-1  ">
+      <div class="m-10 flex justify-center align-middle text-olive-700 dark:text-olive-400 dark:bg-black">
+        <div class="flex-col m-4 w-1/4 p-2 rounded-full bg-gradient-to-r hover:bg-gradient-to-t  from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700">
+          <h1 class="dark:bg-black font-sans text-center text-xl bg-white rounded-full p-2  ">
             Friday
           </h1>
         </div>
-        <div class="flex  dark:bg-black align-middle justify-center text-center text-xl m-2 ">
+        <div class="   dark:bg-black align-middle justify-center text-center text-xl m-2 ">
           <label
-            class="m-2 flex justify-center align-middle dark:bg-black"
+            class="float-right m-2 flex justify-center align-middle dark:bg-black"
             htmlFor="Day"
             id="day"
           >
-            <div class="m-2 ">Day</div>
+            <div class="m-2 text-center ">Day</div>
             <input
               class="dark:bg-black text-center justify-center align-middle w-16 h-10 rounded-full    border-olive-300 focus:border-olive-600 border-2 "
               type="number"
@@ -90,12 +90,12 @@ export function FridayPlanner() {
         </div>
       </div>
       <div class=" dark:bg-black space-between space-x-10 flex  items-center justify-center align-middle">
-        <div class="text-center p-1 w-1/6 rounded-full bg-gradient-to-r hover:bg-gradient-to-t from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700  align-middle ">
-          <h2 class="bg-white dark:bg-black dark:text-olive-400 p-1 font-sans text-lg  rounded-full  text-olive-800  text-center">
+        <div class=" p-2 w-1/6 rounded-full bg-gradient-to-r hover:bg-gradient-to-t from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700  align-middle ">
+          <h2 class="bg-white dark:bg-black dark:text-olive-400 p-1 font-sans text-lg  rounded-full  text-olive-800 text-center">
             Habits
           </h2>
         </div>
-        <div class="space-x-10">
+        <div class="space-x-4">
           <div class="">
             <div class=" flex items-center justify-center align-middle">
               <input
@@ -173,9 +173,9 @@ export function FridayPlanner() {
             </form>
           </div>
         </div>
-  
+
         <div>
-          <div class=" w-20 text-center  p-1 rounded-full bg-gradient-to-r hover:bg-gradient-to-t from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700 m-6 items-center justify-center align-middle ">
+          <div class=" w-20 text-center  p-2 rounded-full bg-gradient-to-r hover:bg-gradient-to-t from-olive-700 to-cocoa-700 via-navy-700 hover:from-olive-700 hover:to-cocoa-700 hover:via-navy-700 m-6 items-center justify-center align-middle ">
             <h3 class=" flex justify-center bg-white p-1 font-sans text-lg  rounded-full   text-olive-800 dark:bg-black text-right dark:text-olive-400">
               To Do
             </h3>{" "}
@@ -184,21 +184,21 @@ export function FridayPlanner() {
             {taskEntry.map((data) => {
               console.log(data.Task);
               return (
-                <div class="align-left text-cocoa-600  p-1" key={data.id}>
+                <div class="align-left text-olive-600  p-1" key={data.id}>
                   {data.Task}
                   <button
-                    class=" m-2 border-2 border-cocoa-500 bg-olive-700 w-6 h-6 rounded-full align-middle justify-center text-cocoa-500"
+                    class="text-center  m-2 border-2 border-cocoa-800 bg-olive-700 w-6 h-6 rounded-full justify-center text-olive-400 align-middle "
                     onClick={() => onDelete(data._id)}
-                  >
+                  ><div class="mb-2 align-middle">
                     {" "}
                     -{" "}
-                  </button>
+                 </div> </button>
                 </div>
               );
             })}
           </div>{" "}
         </div>
-           </div>
+      </div>
 
     </>
   );

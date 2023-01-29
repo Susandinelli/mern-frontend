@@ -11,11 +11,11 @@ import Planner from "./components/planner";
 
 const App = () => {
   return (
-    <div>
+    <div class="dark:bg-black">
       <Navbar />
 
 
-      <Routes>
+      <Routes >
         <Route path="/" element={<Planner />} />
         <Route path="/planner" element={<Planner />} />
         <Route path="/journal" element={<Journal />} />

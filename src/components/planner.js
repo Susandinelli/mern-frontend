@@ -5,17 +5,19 @@ import { WednesdayPlanner } from "./WednesdayPlanner";
 import { ThursdayPlanner } from "./ThursdayPlanner";
 import { FridayPlanner } from "./FridayPlanner";
 import { SaturdayPlanner } from "./SaturdayPlanner";
-
+import "./index.css"
 export default function Planner() {
   return (
     <>
-      <SundayPlanner />
-      <MondayPlanner />
+      <SundayPlanner  />
+      <MondayPlanner/>
       <TuesdayPlanner />
-      <WednesdayPlanner />
-      <ThursdayPlanner />
-      <FridayPlanner />
-      <SaturdayPlanner />
+      <TuesdayPlanner />
+      <WednesdayPlanner  />
+      <ThursdayPlanner  />
+      <ThursdayPlanner  />
+      <FridayPlanner  />
+      <SaturdayPlanner   />
     </>
   );
 }
