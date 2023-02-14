@@ -15,7 +15,6 @@ export default function Planner() {
       <TuesdayPlanner />
       <WednesdayPlanner  />
       <ThursdayPlanner  />
-      <ThursdayPlanner  />
       <FridayPlanner  />
       <SaturdayPlanner   />
     </>
